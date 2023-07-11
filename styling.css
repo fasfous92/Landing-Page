@@ -1,18 +1,12 @@
+
+
+/*Styling of the whole page */
 body, html {
     height: 100%;
     color: #e5e7eb;
     font-size: 18px;
 }
 
-.box {
-    box-sizing: border-box;
-    padding: 30px;
-    background: #1F2937;
-    height: auto;
-    width: 100%;
-    flex: O;
-
-}
 .page {
     display: flex;
     flex-direction: column;
@@ -22,7 +16,32 @@ body, html {
     justify-content: center;
 }
 
-/*select the childs of .first */
+
+/*styling of the three main boxes that 
+make the page */
+.box {
+    box-sizing: border-box;
+    padding: 30px;
+    background: #1F2937;
+    height: auto;
+    width: 100%;
+    flex: O;
+
+}
+
+/*styling of the first Box (dark blue header one)*/
+
+.first{
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+    flex: 1;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
 .first div {
     flex: 1;
     color: white;
@@ -33,9 +52,20 @@ body, html {
    
     
 }
+    /*styling of the link to home page*/
+#link{
+    text-decoration:none;
+    
+}
+#link:visited{
+    text-decoration:none;
+    color: #e5e7eb;
+}
+
 
 .first > :last-child {
     flex: 3;
+    gap: 5%;
 }
 
 .header, .header .links, #top {
@@ -56,27 +86,9 @@ body, html {
 }
 
 
-.button{
-    color: #e5e7eb;
-    background: #3882F6;
-    border-radius: 8px;
-    border: 0;
-    font-weight: bold;
-    width: 20%;
-}
+/*syling of the second box (the white one)*/
 
 
-
-.first{
-    display: flex;
-    flex-direction: column;
-    gap:5%;
-    flex: 2;
-    padding-top: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
-}
 .second{
     display: flex;
     flex-direction: column;
@@ -89,43 +101,9 @@ body, html {
 .second .one{
     display: flex;
     flex-direction: column;
-    gap:10%;
-    flex:2;
+    gap:5%;
+    flex:5;
     text-align-last: center;
-}
-
-.second .one > :first-child {
-    
-    flex: 0;
-    font-size: 36px;
-    font-weight: bold;
-    color: #1F2937;
-
-}
-
-#list{
-    flex:1;
-    gap: 5%;
-    padding: 1%;
-    display: flex;
-}
-#list span{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-#list span > img{
-    border-radius: 8px;
-    border: 4px solid gray;
-    flex: 1;
-}
-#list span > p {
-    border-radius: 8px;
-    flex: 0;
-    color: #1F2937;
-
-
-
 }
 
 .second .two{
@@ -135,18 +113,49 @@ body, html {
     font-style: italic;
     padding: 3%;
     border-radius: 8px;
-    flex:1;
+    flex:0;
 }
 
 .second .three{
-    flex:1;
+    flex:0;
     padding: 3%;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-#action {
+    /*styling the first element of the second box*/
+.second .one > :first-child {
+    
+    flex: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+
+}
+
+#list{ /*second element inside the .second .one */
+    flex:2;
+    gap: 5%;
+    display: flex;
+}
+#list span{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#list span > p {
+    border-radius: 8px;
+    flex: 0;
+    color: #1F2937;
+
+
+
+}
+
+
+#action { /*child of the .second .third */
     display: flex; 
     background: #3882F6; 
     height: 100%; 
@@ -154,4 +163,47 @@ body, html {
     align-items: center;
     border-radius: 8px;
 
+}
+
+
+/*styling of button */
+
+.button{
+    color: #e5e7eb;
+    background: #3882F6;
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    width: 20%;
+}
+
+/*styling of images*/
+
+/*style of the header logo*/
+
+#logo{
+    width: 50px; 
+    height: auto; 
+    border-radius: 50%;
+
+}
+
+/*styling of the image in the header*/
+#headerimg {
+    border: 2px solid white; 
+    border-radius: 8px; 
+    width: auto; 
+    height: 200px;
+
+
+}
+
+/*styling of the artists images*/
+
+.artist{
+    border-radius: 8px;
+    border: 4px solid gray;
+    flex: 1;
+    width: auto;
+    height: 60px;
 }
