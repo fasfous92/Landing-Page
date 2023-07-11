@@ -4,3 +4,4 @@ try to mimic the webpage proposed by the Odin project.
 The idea is to go through all the elements we were able to discover 
 in the last chapters (especally CSS styling).
 
+All the images were taking from the website: https://www.pexels.com/fr-fr/
